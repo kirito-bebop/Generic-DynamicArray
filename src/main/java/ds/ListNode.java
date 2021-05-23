@@ -11,8 +11,8 @@ public class ListNode<T> {
     //---------------------------
     //       * CONSTRUCTOR *
     //---------------------------
-    public ListNode(T data){
-        this.data = data;
+    public ListNode(final T obj){
+        this.data = (T) obj;
     }
 
     //---------------------------
@@ -25,6 +25,11 @@ public class ListNode<T> {
      * @return data - Instancia que conterá un atributo xenérico <T>
      */
     public T getData(){ return this.data;}
+    /**
+     * Establece o valor que garda o nodo.
+     *
+     */
+    public void setData(T data){ this.data = data;}
 
     /**
      * Devolve o seguinte nodo da LinkedList.
